@@ -110,7 +110,7 @@ select {
   cursor: pointer;
 }
 
-input[type=submit] {
+input[type=button] {
   width: 25%;
   background-color: #2042ce;
   color: white;
@@ -119,6 +119,10 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#error-log {
+  color: brown;
 }
 
 .footer__container {

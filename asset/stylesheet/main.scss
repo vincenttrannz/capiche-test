@@ -92,6 +92,7 @@ a{
 }
 
 // FORM STYLE
+
 .form {
   margin: 15% 0 15% 0;
   h3{
@@ -120,7 +121,7 @@ select{
   cursor: pointer;
 }
 
-input[type=submit] {
+input[type=button] {
   width: 25%;
   background-color: $primary-color;
   color: white;
@@ -129,6 +130,11 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+// Error log
+#error-log{
+  color: brown;
 }
 
 // FOOTER STYLE
