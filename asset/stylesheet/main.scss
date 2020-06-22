@@ -149,7 +149,7 @@ input[type=submit] {
 }
 
 // MEDIA CHANNEL
-@media screen and (max-width: 736px){ /* Iphone 7 and 8 plus */
+@media screen and (max-width: 736px), screen and (max-width: 375px) { /* Iphone 7, 8 plus & other mobile devices*/
   $max-width: 80%;
   
   .container {

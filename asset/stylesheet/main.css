@@ -137,8 +137,8 @@ input[type=submit] {
   font-size: 0.83333rem;
 }
 
-@media screen and (max-width: 736px) {
-  /* Iphone 7 and 8 plus */
+@media screen and (max-width: 736px), screen and (max-width: 375px) {
+  /* Iphone 7, 8 plus & other mobile devices*/
   .container {
     margin: 4% auto 4% auto;
     max-width: 80%;
