@@ -1,0 +1,179 @@
+// Default style set & variables
+$font-stack: 'Sarabun', sans-serif;
+$font-size: 1.25rem;
+$light-font: 300;
+$medium-font: 500;
+$heavy-font: 700;
+$primary-color: rgb(32, 66, 206);
+
+* {
+  font-family: $font-stack
+}
+
+body {
+  margin: 0;
+  padding: 0;
+};
+
+footer {
+  background-color: gainsboro;
+}
+
+a{
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.container {
+  margin: 4% auto 4% auto;
+  max-width: 50%;
+}
+
+// Set elements
+
+.is__title{
+  font-size: $font-size * 2;
+  font-weight: $heavy-font;
+  margin: inherit;
+}
+
+.is__subtitle{
+  font-size: $font-size;
+  font-weight: $heavy-font;
+}
+
+.is__date{
+  text-transform: uppercase;
+}
+
+.is__tag{
+  font-size: $font-size/1.5;
+  font-weight: $medium-font;
+}
+
+.is__body{
+  font-size: $font-size/1.25;
+  font-weight: $light-font;
+  line-height: 1.5;
+}
+
+// BLOG STYLE
+
+.blog {
+  width: 100%;
+}
+
+.blog__intro{
+  margin: 0;
+}
+
+// Teaser style
+
+.teaser {
+  display: flex;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.teaser img {
+  width: 100%;
+}
+
+.teaser__left{
+  float: left;
+  padding-right: 2.5%;
+}
+
+.teaser__right{
+  float: right;
+  padding-left: 2.5%;
+}
+
+// FORM STYLE
+.form {
+  margin: 15% 0 15% 0;
+}
+.form h3{
+  text-align: center;
+}
+
+.form-body{
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 47%;
+  padding: 2%;
+  margin: 2% 1%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: $primary-color;
+  color: white;
+  padding: 1.5% 2%;
+  margin: 1%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// FOOTER STYLE
+
+.footer__container {
+  width: 50%;
+  margin: auto;
+  padding: 5rem 0 5rem 0;
+}
+
+.address, .contact{
+  width: 100%;
+  padding-top: 1rem;
+  line-height: 0.75;
+  h4, p, a {
+    font-size: $font-size/1.5;
+  }
+}
+
+// MEDIA CHANNEL
+@media screen and (max-width: 736px){ /* Iphone 7 and 8 plus */
+  $max-width: 80%;
+  
+  .container {
+    margin: 4% auto 4% auto;
+    max-width: $max-width;
+  }
+
+  // Teaser
+  .teaser {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    width: 100%;
+  }
+
+  .teaser div {
+    margin-top: 20%;
+    padding: 0;
+  }
+
+  // Form
+  input[type=text], select {
+    width: 100%;
+    padding: 4%;
+  }
+
+  input[type=submit] {
+    width: 60%;
+    padding: 4%;
+  }
+
+  // Footer
+  .footer__container {
+    width: $max-width;
+  }
+}
