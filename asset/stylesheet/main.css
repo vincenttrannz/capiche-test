@@ -167,7 +167,7 @@ input[type=button] {
     padding: 4%;
     margin-top: 4%;
   }
-  input[type=submit] {
+  input[type=button] {
     width: 60%;
     padding: 4%;
   }
